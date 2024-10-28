@@ -18,6 +18,7 @@ const newPostName = ref<string>("")
 
 const createPost = () => {
   postsStore.addPost(newPostName.value)
+  newPostName.value = ""
 }
 </script>
 
